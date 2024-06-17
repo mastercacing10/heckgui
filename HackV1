@@ -1,0 +1,716 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local Fly = Instance.new("TextButton")
+local infjump = Instance.new("TextButton")
+local KickUrSelf = Instance.new("TextButton")
+local Teleport = Instance.new("TextButton")
+local Esp = Instance.new("TextButton")
+local Invisiblr = Instance.new("TextButton")
+local Noclip = Instance.new("TextButton")
+local Fling = Instance.new("TextButton")
+local Spin = Instance.new("TextButton")
+local TextButton = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+local TextButton_3 = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+Main.Position = UDim2.new(0.242961422, 0, 0.207815692, 0)
+Main.Size = UDim2.new(0, 530, 0, 265)
+Main.Visible = false
+
+TextLabel.Parent = Main
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Size = UDim2.new(0, 530, 0, 50)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "Hack Gui Made By MASTERCACING10"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+UICorner.Parent = Main
+
+ScrollingFrame.Parent = Main
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.Position = UDim2.new(0, 0, 0.188679248, 0)
+ScrollingFrame.Size = UDim2.new(0, 530, 0, 215)
+
+Fly.Name = "Fly"
+Fly.Parent = ScrollingFrame
+Fly.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Fly.Size = UDim2.new(0, 200, 0, 50)
+Fly.Font = Enum.Font.SourceSans
+Fly.Text = "Fly"
+Fly.TextColor3 = Color3.fromRGB(0, 0, 0)
+Fly.TextScaled = true
+Fly.TextSize = 14.000
+Fly.TextWrapped = true
+
+infjump.Name = "infjump"
+infjump.Parent = ScrollingFrame
+infjump.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+infjump.Position = UDim2.new(0, 0, 0.094339624, 0)
+infjump.Size = UDim2.new(0, 200, 0, 50)
+infjump.Font = Enum.Font.SourceSans
+infjump.Text = "Infinite Jump"
+infjump.TextColor3 = Color3.fromRGB(0, 0, 0)
+infjump.TextScaled = true
+infjump.TextSize = 14.000
+infjump.TextWrapped = true
+
+KickUrSelf.Name = "KickUrSelf"
+KickUrSelf.Parent = ScrollingFrame
+KickUrSelf.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KickUrSelf.Position = UDim2.new(0, 0, 0.190566033, 0)
+KickUrSelf.Size = UDim2.new(0, 200, 0, 50)
+KickUrSelf.Font = Enum.Font.SourceSans
+KickUrSelf.Text = "KickUrSelf"
+KickUrSelf.TextColor3 = Color3.fromRGB(0, 0, 0)
+KickUrSelf.TextScaled = true
+KickUrSelf.TextSize = 14.000
+KickUrSelf.TextWrapped = true
+
+Teleport.Name = "Teleport"
+Teleport.Parent = ScrollingFrame
+Teleport.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Teleport.Position = UDim2.new(0.377358496, 0, 0, 0)
+Teleport.Size = UDim2.new(0, 200, 0, 50)
+Teleport.Font = Enum.Font.SourceSans
+Teleport.Text = "Teleport to random player"
+Teleport.TextColor3 = Color3.fromRGB(0, 0, 0)
+Teleport.TextScaled = true
+Teleport.TextSize = 14.000
+Teleport.TextWrapped = true
+
+Esp.Name = "Esp"
+Esp.Parent = ScrollingFrame
+Esp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Esp.Position = UDim2.new(0.377358496, 0, 0.0942131579, 0)
+Esp.Size = UDim2.new(0, 200, 0, 50)
+Esp.Font = Enum.Font.SourceSans
+Esp.Text = "Esp All player"
+Esp.TextColor3 = Color3.fromRGB(0, 0, 0)
+Esp.TextScaled = true
+Esp.TextSize = 14.000
+Esp.TextWrapped = true
+
+Invisiblr.Name = "Invisiblr"
+Invisiblr.Parent = ScrollingFrame
+Invisiblr.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Invisiblr.Position = UDim2.new(0.377358496, 0, 0.19069767, 0)
+Invisiblr.Size = UDim2.new(0, 200, 0, 50)
+Invisiblr.Font = Enum.Font.SourceSans
+Invisiblr.Text = "Become invisible *STILL SEEN BY OTHER PLAYER*"
+Invisiblr.TextColor3 = Color3.fromRGB(0, 0, 0)
+Invisiblr.TextScaled = true
+Invisiblr.TextSize = 14.000
+Invisiblr.TextWrapped = true
+
+Noclip.Name = "Noclip"
+Noclip.Parent = ScrollingFrame
+Noclip.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Noclip.Position = UDim2.new(0, 0, 0.302650064, 0)
+Noclip.Size = UDim2.new(0, 200, 0, 50)
+Noclip.Font = Enum.Font.SourceSans
+Noclip.Text = "Noclip"
+Noclip.TextColor3 = Color3.fromRGB(0, 0, 0)
+Noclip.TextScaled = true
+Noclip.TextSize = 14.000
+Noclip.TextWrapped = true
+
+Fling.Name = "Fling"
+Fling.Parent = ScrollingFrame
+Fling.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Fling.Position = UDim2.new(0.377358496, 0, 0.297605008, 0)
+Fling.Size = UDim2.new(0, 200, 0, 50)
+Fling.Font = Enum.Font.SourceSans
+Fling.Text = "Fling yourself"
+Fling.TextColor3 = Color3.fromRGB(0, 0, 0)
+Fling.TextScaled = true
+Fling.TextSize = 14.000
+Fling.TextWrapped = true
+
+Spin.Name = "Spin"
+Spin.Parent = ScrollingFrame
+Spin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Spin.Position = UDim2.new(0, 0, 0.398747206, 0)
+Spin.Size = UDim2.new(0, 200, 0, 50)
+Spin.Font = Enum.Font.SourceSans
+Spin.Text = "Rapid Spin"
+Spin.TextColor3 = Color3.fromRGB(0, 0, 0)
+Spin.TextScaled = true
+Spin.TextSize = 14.000
+Spin.TextWrapped = true
+
+TextButton.Parent = Main
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.Position = UDim2.new(0.351163745, 0, -0.188909099, 0)
+TextButton.Size = UDim2.new(0, 156, 0, 50)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Destroy Gui"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+TextButton_2.Parent = Main
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.Position = UDim2.new(0.703993917, 0, -0.188909113, 0)
+TextButton_2.Size = UDim2.new(0, 156, 0, 50)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "Close Gui"
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextScaled = true
+TextButton_2.TextSize = 14.000
+TextButton_2.TextWrapped = true
+
+TextButton_3.Parent = ScreenGui
+TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.Position = UDim2.new(0, 0, 0.382402718, 0)
+TextButton_3.Size = UDim2.new(0, 139, 0, 50)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = "Open GUI"
+TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.TextScaled = true
+TextButton_3.TextSize = 14.000
+TextButton_3.TextWrapped = true
+
+-- Scripts:
+
+local function XTBQO_fake_script() -- Fly.Fly 
+	local script = Instance.new('LocalScript', Fly)
+
+	local button = script.Parent
+	local player = game.Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local flying = false
+	local speed = 50
+	
+	local bodyVelocity
+	local bodyGyro
+	
+	local function enableFly()
+		bodyVelocity = Instance.new("BodyVelocity")
+		bodyVelocity.Velocity = Vector3.new(0, 0, 0)
+		bodyVelocity.MaxForce = Vector3.new(1000000, 1000000, 1000000)
+		bodyVelocity.Parent = character.HumanoidRootPart
+	
+		bodyGyro = Instance.new("BodyGyro")
+		bodyGyro.CFrame = character.HumanoidRootPart.CFrame
+		bodyGyro.MaxTorque = Vector3.new(1000000, 1000000, 1000000)
+		bodyGyro.P = 3000
+		bodyGyro.Parent = character.HumanoidRootPart
+	
+		character.Humanoid.PlatformStand = true
+	
+		game:GetService("RunService").RenderStepped:Connect(function()
+			if flying then
+				local direction = Vector3.new(0, 0, 0)
+				local camera = workspace.CurrentCamera
+				if player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+					local rootPart = player.Character.HumanoidRootPart
+	
+					if game:GetService("UserInputService"):IsKeyDown(Enum.KeyCode.W) then
+						direction = direction + (camera.CFrame.LookVector * speed)
+					end
+					if game:GetService("UserInputService"):IsKeyDown(Enum.KeyCode.S) then
+						direction = direction - (camera.CFrame.LookVector * speed)
+					end
+					if game:GetService("UserInputService"):IsKeyDown(Enum.KeyCode.A) then
+						direction = direction - (camera.CFrame.RightVector * speed)
+					end
+					if game:GetService("UserInputService"):IsKeyDown(Enum.KeyCode.D) then
+						direction = direction + (camera.CFrame.RightVector * speed)
+					end
+					if game:GetService("UserInputService"):IsKeyDown(Enum.KeyCode.Space) then
+						direction = direction + Vector3.new(0, speed, 0)
+					end
+					if game:GetService("UserInputService"):IsKeyDown(Enum.KeyCode.LeftShift) then
+						direction = direction - Vector3.new(0, speed, 0)
+					end
+	
+					bodyVelocity.Velocity = direction
+					bodyGyro.CFrame = CFrame.new(rootPart.Position, rootPart.Position + camera.CFrame.LookVector)
+				end
+			end
+		end)
+	end
+	
+	local function disableFly()
+		if bodyVelocity then
+			bodyVelocity:Destroy()
+		end
+		if bodyGyro then
+			bodyGyro:Destroy()
+		end
+		character.Humanoid.PlatformStand = false
+	end
+	
+	local function toggleFly()
+		flying = not flying
+		if flying then
+			enableFly()
+		else
+			disableFly()
+		end
+	end
+	
+	button.MouseButton1Click:Connect(toggleFly)
+	
+	player.CharacterAdded:Connect(function(char)
+		character = char
+		if flying then
+			enableFly()
+		end
+	end)
+	
+end
+coroutine.wrap(XTBQO_fake_script)()
+local function CFSTP_fake_script() -- infjump.infjump 
+	local script = Instance.new('LocalScript', infjump)
+
+	local button = script.Parent
+	local player = game.Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local humanoid = character:WaitForChild("Humanoid")
+	local userInputService = game:GetService("UserInputService")
+	local flying = false
+	
+	local function enableSpamJump()
+		flying = true
+		game:GetService("RunService").RenderStepped:Connect(function()
+			if flying and userInputService:IsKeyDown(Enum.KeyCode.Space) then
+				humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+			end
+		end)
+	end
+	
+	local function disableSpamJump()
+		flying = false
+	end
+	
+	local function toggleSpamJump()
+		if flying then
+			disableSpamJump()
+		else
+			enableSpamJump()
+		end
+	end
+	
+	button.MouseButton1Click:Connect(toggleSpamJump)
+	
+	player.CharacterAdded:Connect(function(char)
+		character = char
+		humanoid = character:WaitForChild("Humanoid")
+		if flying then
+			enableSpamJump()
+		end
+	end)
+	
+end
+coroutine.wrap(CFSTP_fake_script)()
+local function CXWDSQU_fake_script() -- KickUrSelf.Kick 
+	local script = Instance.new('LocalScript', KickUrSelf)
+
+	local button = script.Parent
+	local player = game.Players.LocalPlayer
+	
+	local function kickPlayer()
+		player:Kick("You have been kicked from the game.")
+	end
+	
+	button.MouseButton1Click:Connect(kickPlayer)
+	
+end
+coroutine.wrap(CXWDSQU_fake_script)()
+local function VTCCF_fake_script() -- Teleport.Telepur 
+	local script = Instance.new('LocalScript', Teleport)
+
+	local button = script.Parent
+	local player = game.Players.LocalPlayer
+	
+	local function teleportToRandomPlayer()
+		local players = game.Players:GetPlayers()
+		if #players > 1 then
+			local randomPlayer
+			repeat
+				randomPlayer = players[math.random(1, #players)]
+			until randomPlayer ~= player
+	
+			if randomPlayer and randomPlayer.Character and randomPlayer.Character:FindFirstChild("HumanoidRootPart") then
+				local targetPosition = randomPlayer.Character.HumanoidRootPart.Position
+				if player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+					player.Character.HumanoidRootPart.CFrame = CFrame.new(targetPosition)
+				end
+			end
+		else
+			warn("No other players to teleport to.")
+		end
+	end
+	
+	button.MouseButton1Click:Connect(teleportToRandomPlayer)
+	
+end
+coroutine.wrap(VTCCF_fake_script)()
+local function BAXLF_fake_script() -- Esp.Esp 
+	local script = Instance.new('LocalScript', Esp)
+
+	local button = script.Parent
+	local player = game.Players.LocalPlayer
+	local espEnabled = false
+	
+	local function createESP(targetPlayer)
+		if targetPlayer.Character and targetPlayer.Character:FindFirstChild("HumanoidRootPart") then
+			-- Create ESP box for each part
+			for _, part in ipairs(targetPlayer.Character:GetChildren()) do
+				if part:IsA("BasePart") and not part:FindFirstChild("ESP") then
+					local espBox = Instance.new("BoxHandleAdornment")
+					espBox.Name = "ESP"
+					espBox.Adornee = part
+					espBox.AlwaysOnTop = true
+					espBox.ZIndex = 0
+					espBox.Size = part.Size
+					espBox.Transparency = 0.5
+					espBox.Color3 = Color3.fromRGB(255, 0, 0) -- Red color
+					espBox.Parent = part
+				end
+			end
+	
+			-- Create billboard GUI for name and distance
+			local billboard = Instance.new("BillboardGui")
+			billboard.Name = "ESPGui"
+			billboard.Adornee = targetPlayer.Character:FindFirstChild("HumanoidRootPart")
+			billboard.Size = UDim2.new(0, 200, 0, 50)
+			billboard.StudsOffset = Vector3.new(0, 2, 0)
+			billboard.AlwaysOnTop = true
+	
+			local nameLabel = Instance.new("TextLabel")
+			nameLabel.Size = UDim2.new(1, 0, 0.5, 0)
+			nameLabel.BackgroundTransparency = 1
+			nameLabel.Text = targetPlayer.Name
+			nameLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+			nameLabel.TextStrokeTransparency = 0
+			nameLabel.Parent = billboard
+	
+			local distanceLabel = Instance.new("TextLabel")
+			distanceLabel.Size = UDim2.new(1, 0, 0.5, 0)
+			distanceLabel.Position = UDim2.new(0, 0, 0.5, 0)
+			distanceLabel.BackgroundTransparency = 1
+			distanceLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+			distanceLabel.TextStrokeTransparency = 0
+			distanceLabel.Parent = billboard
+	
+			billboard.Parent = targetPlayer.Character
+	
+			game:GetService("RunService").RenderStepped:Connect(function()
+				if espEnabled and targetPlayer.Character and targetPlayer.Character:FindFirstChild("HumanoidRootPart") then
+					local distance = (targetPlayer.Character.HumanoidRootPart.Position - player.Character.HumanoidRootPart.Position).Magnitude
+					distanceLabel.Text = string.format("Distance: %.1f studs", distance)
+				end
+			end)
+		end
+	end
+	
+	local function removeESP(targetPlayer)
+		if targetPlayer.Character then
+			for _, part in ipairs(targetPlayer.Character:GetChildren()) do
+				if part:IsA("BasePart") then
+					local espBox = part:FindFirstChild("ESP")
+					if espBox then
+						espBox:Destroy()
+					end
+				end
+			end
+	
+			local billboard = targetPlayer.Character:FindFirstChild("ESPGui")
+			if billboard then
+				billboard:Destroy()
+			end
+		end
+	end
+	
+	local function toggleESP()
+		espEnabled = not espEnabled
+		for _, targetPlayer in ipairs(game.Players:GetPlayers()) do
+			if targetPlayer ~= player then
+				if espEnabled then
+					createESP(targetPlayer)
+				else
+					removeESP(targetPlayer)
+				end
+			end
+		end
+	end
+	
+	button.MouseButton1Click:Connect(toggleESP)
+	
+	-- Ensure ESP is added or removed for players who join after the button is pressed
+	game.Players.PlayerAdded:Connect(function(newPlayer)
+		if espEnabled and newPlayer ~= player then
+			createESP(newPlayer)
+		end
+	end)
+	
+	game.Players.PlayerRemoving:Connect(function(leavingPlayer)
+		if espEnabled and leavingPlayer ~= player then
+			removeESP(leavingPlayer)
+		end
+	end)
+	
+	-- Handle player respawn
+	game.Players.PlayerAdded:Connect(function(targetPlayer)
+		targetPlayer.CharacterAdded:Connect(function(character)
+			if espEnabled and targetPlayer ~= player then
+				createESP(targetPlayer)
+			end
+		end)
+	end)
+	
+end
+coroutine.wrap(BAXLF_fake_script)()
+local function TQXY_fake_script() -- Invisiblr.INV 
+	local script = Instance.new('LocalScript', Invisiblr)
+
+	local button = script.Parent
+	local player = game.Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local invisible = false
+	
+	local function makeInvisible()
+		invisible = true
+	
+		-- Hide player's character
+		character.HumanoidRootPart.Transparency = 1
+		character.HumanoidRootPart.CanCollide = false
+		for _, part in ipairs(character:GetChildren()) do
+			if part:IsA("BasePart") then
+				part.Transparency = 1
+			end
+		end
+	
+		-- Create ESP for other players
+		for _, otherPlayer in ipairs(game.Players:GetPlayers()) do
+			if otherPlayer ~= player then
+				local billboard = Instance.new("BillboardGui")
+				billboard.Name = "InvisiblePlayerESPGui"
+				billboard.Adornee = otherPlayer.Character:FindFirstChild("HumanoidRootPart")
+				billboard.Size = UDim2.new(0, 200, 0, 50)
+				billboard.StudsOffset = Vector3.new(0, 2, 0)
+				billboard.AlwaysOnTop = true
+	
+				local nameLabel = Instance.new("TextLabel")
+				nameLabel.Size = UDim2.new(1, 0, 0.5, 0)
+				nameLabel.BackgroundTransparency = 1
+				nameLabel.Text = otherPlayer.Name
+				nameLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+				nameLabel.TextStrokeTransparency = 0
+				nameLabel.Parent = billboard
+	
+				local distanceLabel = Instance.new("TextLabel")
+				distanceLabel.Size = UDim2.new(1, 0, 0.5, 0)
+				distanceLabel.Position = UDim2.new(0, 0, 0.5, 0)
+				distanceLabel.BackgroundTransparency = 1
+				distanceLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+				distanceLabel.TextStrokeTransparency = 0
+				distanceLabel.Parent = billboard
+	
+				billboard.Parent = otherPlayer.Character
+	
+				game:GetService("RunService").RenderStepped:Connect(function()
+					if invisible and otherPlayer.Character and otherPlayer.Character:FindFirstChild("HumanoidRootPart") then
+						local distance = (otherPlayer.Character.HumanoidRootPart.Position - player.Character.HumanoidRootPart.Position).Magnitude
+						distanceLabel.Text = string.format("Distance: %.1f studs", distance)
+					end
+				end)
+			end
+		end
+	end
+	
+	local function makeVisible()
+		invisible = false
+	
+		-- Show player's character
+		character.HumanoidRootPart.Transparency = 0
+		character.HumanoidRootPart.CanCollide = true
+		for _, part in ipairs(character:GetChildren()) do
+			if part:IsA("BasePart") then
+				part.Transparency = 0
+			end
+		end
+	
+		-- Remove ESP from other players
+		for _, otherPlayer in ipairs(game.Players:GetPlayers()) do
+			if otherPlayer ~= player then
+				local billboard = otherPlayer.Character:FindFirstChild("InvisiblePlayerESPGui")
+				if billboard then
+					billboard:Destroy()
+				end
+			end
+		end
+	end
+	
+	local function toggleVisibility()
+		if invisible then
+			makeVisible()
+		else
+			makeInvisible()
+		end
+	end
+	
+	button.MouseButton1Click:Connect(toggleVisibility)
+	
+	-- Ensure visibility is reset if the player respawns
+	player.CharacterAdded:Connect(function(newCharacter)
+		character = newCharacter
+		if invisible then
+			makeInvisible()
+		end
+	end)
+	
+end
+coroutine.wrap(TQXY_fake_script)()
+local function ZSXRPOK_fake_script() -- Noclip.noclip 
+	local script = Instance.new('LocalScript', Noclip)
+
+	local player = game.Players.LocalPlayer
+	local noclipEnabled = false
+	
+	local function onButtonClicked()
+		noclipEnabled = not noclipEnabled
+	
+		if noclipEnabled then
+			-- Enable noclip
+			game:GetService("RunService").Stepped:Connect(function()
+				if noclipEnabled and player.Character then
+					for _, part in ipairs(player.Character:GetDescendants()) do
+						if part:IsA("BasePart") then
+							part.CanCollide = false
+						end
+					end
+				end
+			end)
+		else
+			-- Disable noclip
+			if player.Character then
+				for _, part in ipairs(player.Character:GetDescendants()) do
+					if part:IsA("BasePart") then
+						part.CanCollide = true
+					end
+				end
+			end
+		end
+	end
+	
+	script.Parent.MouseButton1Click:Connect(onButtonClicked)
+	
+end
+coroutine.wrap(ZSXRPOK_fake_script)()
+local function YCSBA_fake_script() -- Fling.Fling 
+	local script = Instance.new('LocalScript', Fling)
+
+	local player = game.Players.LocalPlayer
+	local flingForce = 1000  -- Adjust this value to control the fling force
+	
+	local function onButtonClicked()
+		local character = player.Character
+		if character then
+			local humanoidRootPart = character:FindFirstChild("HumanoidRootPart")
+			if humanoidRootPart then
+				-- Calculate random fling direction
+				local randomDirection = Vector3.new(math.random(-100, 100), 1, math.random(-100, 100)).unit
+	
+				-- Apply velocity to fling the player
+				humanoidRootPart.Velocity = randomDirection * flingForce
+			end
+		end
+	end
+	
+	script.Parent.MouseButton1Click:Connect(onButtonClicked)
+	
+end
+coroutine.wrap(YCSBA_fake_script)()
+local function BGRLC_fake_script() -- Spin.Spinn 
+	local script = Instance.new('LocalScript', Spin)
+
+	local player = game.Players.LocalPlayer
+	local spinSpeed = 10  -- Adjust this value to control the spin speed
+	
+	local function onButtonClicked()
+		local character = player.Character
+		if character then
+			local humanoid = character:FindFirstChildOfClass("Humanoid")
+			if humanoid then
+				-- Set up rapid spin effect
+				local isSpinning = true
+				local spinDirection = Vector3.new(0, 1, 0)  -- Spin around the Y-axis
+	
+				local function rapidSpin()
+					while isSpinning do
+						for _, part in ipairs(character:GetChildren()) do
+							if part:IsA("BasePart") then
+								part.CFrame = part.CFrame * CFrame.Angles(0, math.rad(spinSpeed), 0)
+							end
+						end
+						wait()  -- Wait for the next frame
+					end
+				end
+	
+				-- Start rapid spin on button click
+				rapidSpin()
+	
+				-- Stop spin on button release (optional)
+				script.Parent.MouseButton1Up:Connect(function()
+					isSpinning = false
+				end)
+			end
+		end
+	end
+	
+	script.Parent.MouseButton1Down:Connect(onButtonClicked)
+	
+end
+coroutine.wrap(BGRLC_fake_script)()
+local function QDMHBW_fake_script() -- TextButton.Script 
+	local script = Instance.new('Script', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent:Destroy()
+	end)
+end
+coroutine.wrap(QDMHBW_fake_script)()
+local function VLTLXV_fake_script() -- TextButton_2.Script 
+	local script = Instance.new('Script', TextButton_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+		script.Parent.Parent.Parent.TextButton.Visible = true
+	end)
+end
+coroutine.wrap(VLTLXV_fake_script)()
+local function GTGKIJ_fake_script() -- TextButton_3.Script 
+	local script = Instance.new('Script', TextButton_3)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Main.Visible = true
+		script.Parent.Visible = false
+	end)
+end
+coroutine.wrap(GTGKIJ_fake_script)()
