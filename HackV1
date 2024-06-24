@@ -1,7 +1,4 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
+--MADE BY MASTERCACING10 DONT REPOST
 
 local ScreenGui = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
@@ -17,8 +14,15 @@ local Invisiblr = Instance.new("TextButton")
 local Noclip = Instance.new("TextButton")
 local Fling = Instance.new("TextButton")
 local Spin = Instance.new("TextButton")
+local RapidTele = Instance.new("TextButton")
+local Suicide = Instance.new("TextButton")
+local RapidSuicide = Instance.new("TextButton")
+local Firework = Instance.new("TextButton")
+local Rapidfireworkk = Instance.new("TextButton")
+local REALLYRAPIDD = Instance.new("TextButton")
 local TextButton = Instance.new("TextButton")
 local TextButton_2 = Instance.new("TextButton")
+local PC = Instance.new("TextLabel")
 local TextButton_3 = Instance.new("TextButton")
 
 --Properties:
@@ -52,6 +56,7 @@ ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ScrollingFrame.BackgroundTransparency = 1.000
 ScrollingFrame.Position = UDim2.new(0, 0, 0.188679248, 0)
 ScrollingFrame.Size = UDim2.new(0, 530, 0, 215)
+ScrollingFrame.CanvasPosition = Vector2.new(0, 315)
 
 Fly.Name = "Fly"
 Fly.Parent = ScrollingFrame
@@ -160,6 +165,78 @@ Spin.TextScaled = true
 Spin.TextSize = 14.000
 Spin.TextWrapped = true
 
+RapidTele.Name = "Rapid Tele"
+RapidTele.Parent = ScrollingFrame
+RapidTele.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RapidTele.Position = UDim2.new(0.377358496, 0, 0.392260611, 0)
+RapidTele.Size = UDim2.new(0, 200, 0, 50)
+RapidTele.Font = Enum.Font.SourceSans
+RapidTele.Text = "Rapid Teleport"
+RapidTele.TextColor3 = Color3.fromRGB(0, 0, 0)
+RapidTele.TextScaled = true
+RapidTele.TextSize = 14.000
+RapidTele.TextWrapped = true
+
+Suicide.Name = "Suicide"
+Suicide.Parent = ScrollingFrame
+Suicide.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Suicide.Position = UDim2.new(0, 0, 0.487898141, 0)
+Suicide.Size = UDim2.new(0, 200, 0, 50)
+Suicide.Font = Enum.Font.SourceSans
+Suicide.Text = "Self Suicide *explosion*"
+Suicide.TextColor3 = Color3.fromRGB(0, 0, 0)
+Suicide.TextScaled = true
+Suicide.TextSize = 14.000
+Suicide.TextWrapped = true
+
+RapidSuicide.Name = "Rapid Suicide"
+RapidSuicide.Parent = ScrollingFrame
+RapidSuicide.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RapidSuicide.Position = UDim2.new(0.377358496, 0, 0.491097808, 0)
+RapidSuicide.Size = UDim2.new(0, 200, 0, 50)
+RapidSuicide.Font = Enum.Font.SourceSans
+RapidSuicide.Text = "Rapid Self Suicide *explosion*"
+RapidSuicide.TextColor3 = Color3.fromRGB(0, 0, 0)
+RapidSuicide.TextScaled = true
+RapidSuicide.TextSize = 14.000
+RapidSuicide.TextWrapped = true
+
+Firework.Name = "Firework"
+Firework.Parent = ScrollingFrame
+Firework.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Firework.Position = UDim2.new(0, 0, 0.587357342, 0)
+Firework.Size = UDim2.new(0, 200, 0, 50)
+Firework.Font = Enum.Font.SourceSans
+Firework.Text = "Firework"
+Firework.TextColor3 = Color3.fromRGB(0, 0, 0)
+Firework.TextScaled = true
+Firework.TextSize = 14.000
+Firework.TextWrapped = true
+
+Rapidfireworkk.Name = "Rapid fireworkk"
+Rapidfireworkk.Parent = ScrollingFrame
+Rapidfireworkk.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rapidfireworkk.Position = UDim2.new(0.377358496, 0, 0.59209013, 0)
+Rapidfireworkk.Size = UDim2.new(0, 200, 0, 50)
+Rapidfireworkk.Font = Enum.Font.SourceSans
+Rapidfireworkk.Text = "Rapid Firework"
+Rapidfireworkk.TextColor3 = Color3.fromRGB(0, 0, 0)
+Rapidfireworkk.TextScaled = true
+Rapidfireworkk.TextSize = 14.000
+Rapidfireworkk.TextWrapped = true
+
+REALLYRAPIDD.Name = "REALLY RAPIDD"
+REALLYRAPIDD.Parent = ScrollingFrame
+REALLYRAPIDD.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+REALLYRAPIDD.Position = UDim2.new(0, 0, 0.717752695, 0)
+REALLYRAPIDD.Size = UDim2.new(0, 200, 0, 50)
+REALLYRAPIDD.Font = Enum.Font.SourceSans
+REALLYRAPIDD.Text = "Really Rapid Firework"
+REALLYRAPIDD.TextColor3 = Color3.fromRGB(0, 0, 0)
+REALLYRAPIDD.TextScaled = true
+REALLYRAPIDD.TextSize = 14.000
+REALLYRAPIDD.TextWrapped = true
+
 TextButton.Parent = Main
 TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.Position = UDim2.new(0.351163745, 0, -0.188909099, 0)
@@ -182,6 +259,17 @@ TextButton_2.TextScaled = true
 TextButton_2.TextSize = 14.000
 TextButton_2.TextWrapped = true
 
+PC.Name = "PC"
+PC.Parent = Main
+PC.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PC.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PC.Position = UDim2.new(0, 0, -0.188679248, 0)
+PC.Size = UDim2.new(0, 175, 0, 49)
+PC.Font = Enum.Font.SourceSans
+PC.Text = "THIS SCRIPT IS PC ONLY"
+PC.TextColor3 = Color3.fromRGB(0, 0, 0)
+PC.TextSize = 20.000
+
 TextButton_3.Parent = ScreenGui
 TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_3.Position = UDim2.new(0, 0, 0.382402718, 0)
@@ -195,7 +283,7 @@ TextButton_3.TextWrapped = true
 
 -- Scripts:
 
-local function RBVYL_fake_script() -- Fly.Fly 
+local function THOG_fake_script() -- Fly.Fly 
 	local script = Instance.new('LocalScript', Fly)
 
 	local button = script.Parent
@@ -228,7 +316,6 @@ local function RBVYL_fake_script() -- Fly.Fly
 				if player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
 					local rootPart = player.Character.HumanoidRootPart
 	
-					-- Keyboard controls
 					if game:GetService("UserInputService"):IsKeyDown(Enum.KeyCode.W) then
 						direction = direction + (camera.CFrame.LookVector * speed)
 					end
@@ -241,21 +328,13 @@ local function RBVYL_fake_script() -- Fly.Fly
 					if game:GetService("UserInputService"):IsKeyDown(Enum.KeyCode.D) then
 						direction = direction + (camera.CFrame.RightVector * speed)
 					end
-					if game:GetService("UserInputService"):IsKeyDown(Enum.KeyCode.Space) then
+					if game:GetService("UserInputService"):IsKeyDown(Enum.KeyCode.E) then
 						direction = direction + Vector3.new(0, speed, 0)
 					end
-					if game:GetService("UserInputService"):IsKeyDown(Enum.KeyCode.LeftShift) then
+					if game:GetService("UserInputService"):IsKeyDown(Enum.KeyCode.Q) then
 						direction = direction - Vector3.new(0, speed, 0)
 					end
 	
-					-- Mobile controls
-					local moveDirection = Vector3.new(0, 0, 0)
-					local moveVector = game:GetService("UserInputService"):GetInputVector()
-					if moveVector.Magnitude > 0 then
-						moveDirection = (camera.CFrame.LookVector * moveVector.Y + camera.CFrame.RightVector * moveVector.X).Unit * speed
-					end
-	
-					direction = direction + moveDirection
 					bodyVelocity.Velocity = direction
 					bodyGyro.CFrame = CFrame.new(rootPart.Position, rootPart.Position + camera.CFrame.LookVector)
 				end
@@ -292,8 +371,8 @@ local function RBVYL_fake_script() -- Fly.Fly
 	end)
 	
 end
-coroutine.wrap(RBVYL_fake_script)()
-local function DUWVI_fake_script() -- infjump.infjump 
+coroutine.wrap(THOG_fake_script)()
+local function LBIYSH_fake_script() -- infjump.infjump 
 	local script = Instance.new('LocalScript', infjump)
 
 	local button = script.Parent
@@ -335,8 +414,8 @@ local function DUWVI_fake_script() -- infjump.infjump
 	end)
 	
 end
-coroutine.wrap(DUWVI_fake_script)()
-local function MTZMEW_fake_script() -- KickUrSelf.Kick 
+coroutine.wrap(LBIYSH_fake_script)()
+local function KCAOR_fake_script() -- KickUrSelf.Kick 
 	local script = Instance.new('LocalScript', KickUrSelf)
 
 	local button = script.Parent
@@ -349,8 +428,8 @@ local function MTZMEW_fake_script() -- KickUrSelf.Kick
 	button.MouseButton1Click:Connect(kickPlayer)
 	
 end
-coroutine.wrap(MTZMEW_fake_script)()
-local function WJJUTL_fake_script() -- Teleport.Telepur 
+coroutine.wrap(KCAOR_fake_script)()
+local function NRVJ_fake_script() -- Teleport.Telepur 
 	local script = Instance.new('LocalScript', Teleport)
 
 	local button = script.Parent
@@ -378,8 +457,8 @@ local function WJJUTL_fake_script() -- Teleport.Telepur
 	button.MouseButton1Click:Connect(teleportToRandomPlayer)
 	
 end
-coroutine.wrap(WJJUTL_fake_script)()
-local function HJZGG_fake_script() -- Esp.Esp 
+coroutine.wrap(NRVJ_fake_script)()
+local function CAOPT_fake_script() -- Esp.Esp 
 	local script = Instance.new('LocalScript', Esp)
 
 	local button = script.Parent
@@ -494,8 +573,8 @@ local function HJZGG_fake_script() -- Esp.Esp
 	end)
 	
 end
-coroutine.wrap(HJZGG_fake_script)()
-local function RSWRFGO_fake_script() -- Invisiblr.INV 
+coroutine.wrap(CAOPT_fake_script)()
+local function DXEFNW_fake_script() -- Invisiblr.INV 
 	local script = Instance.new('LocalScript', Invisiblr)
 
 	local button = script.Parent
@@ -595,8 +674,8 @@ local function RSWRFGO_fake_script() -- Invisiblr.INV
 	end)
 	
 end
-coroutine.wrap(RSWRFGO_fake_script)()
-local function AZUKJF_fake_script() -- Noclip.noclip 
+coroutine.wrap(DXEFNW_fake_script)()
+local function XUAPMVH_fake_script() -- Noclip.noclip 
 	local script = Instance.new('LocalScript', Noclip)
 
 	local player = game.Players.LocalPlayer
@@ -631,8 +710,8 @@ local function AZUKJF_fake_script() -- Noclip.noclip
 	script.Parent.MouseButton1Click:Connect(onButtonClicked)
 	
 end
-coroutine.wrap(AZUKJF_fake_script)()
-local function QJURQ_fake_script() -- Fling.Fling 
+coroutine.wrap(XUAPMVH_fake_script)()
+local function YUIB_fake_script() -- Fling.Fling 
 	local script = Instance.new('LocalScript', Fling)
 
 	local player = game.Players.LocalPlayer
@@ -655,8 +734,8 @@ local function QJURQ_fake_script() -- Fling.Fling
 	script.Parent.MouseButton1Click:Connect(onButtonClicked)
 	
 end
-coroutine.wrap(QJURQ_fake_script)()
-local function ZTWXOT_fake_script() -- Spin.Spinn 
+coroutine.wrap(YUIB_fake_script)()
+local function RFXURS_fake_script() -- Spin.Spinn 
 	local script = Instance.new('LocalScript', Spin)
 
 	local player = game.Players.LocalPlayer
@@ -696,16 +775,360 @@ local function ZTWXOT_fake_script() -- Spin.Spinn
 	script.Parent.MouseButton1Down:Connect(onButtonClicked)
 	
 end
-coroutine.wrap(ZTWXOT_fake_script)()
-local function ODZF_fake_script() -- TextButton.Script 
+coroutine.wrap(RFXURS_fake_script)()
+local function CRJET_fake_script() -- RapidTele.Rapid 
+	local script = Instance.new('LocalScript', RapidTele)
+
+	local player = game.Players.LocalPlayer
+	local teleportSpeed = 0.1  -- Adjust this value to control the teleport speed
+	local flingForce = 1000  -- Adjust this value to control the fling force
+	local isTeleporting = false
+	
+	local function flingPlayer(hit)
+		local humanoidRootPart = player.Character and player.Character:FindFirstChild("HumanoidRootPart")
+		if humanoidRootPart then
+			local otherHumanoid = hit.Parent:FindFirstChildOfClass("Humanoid")
+			local otherHumanoidRootPart = hit.Parent:FindFirstChild("HumanoidRootPart")
+			if otherHumanoid and otherHumanoidRootPart then
+				local direction = (otherHumanoidRootPart.Position - humanoidRootPart.Position).unit
+				otherHumanoidRootPart.Velocity = direction * flingForce
+			end
+		end
+	end
+	
+	local function rapidTeleport()
+		isTeleporting = true
+		while isTeleporting do
+			local otherPlayers = game.Players:GetPlayers()
+			if #otherPlayers > 1 then
+				local randomPlayer
+				repeat
+					randomPlayer = otherPlayers[math.random(1, #otherPlayers)]
+				until randomPlayer ~= player and randomPlayer.Character and randomPlayer.Character:FindFirstChild("HumanoidRootPart")
+	
+				local humanoidRootPart = player.Character and player.Character:FindFirstChild("HumanoidRootPart")
+				local targetHumanoidRootPart = randomPlayer.Character:FindFirstChild("HumanoidRootPart")
+	
+				if humanoidRootPart and targetHumanoidRootPart then
+					humanoidRootPart.CFrame = targetHumanoidRootPart.CFrame + Vector3.new(2, 0, 0)  -- Adjust the offset as needed
+					humanoidRootPart.Touched:Connect(flingPlayer)
+				end
+			else
+				warn("No Player To Teleport")
+			end
+			wait(teleportSpeed)
+		end
+	end
+	
+	local function onButtonClicked()
+		if isTeleporting then
+			isTeleporting = false
+		else
+			rapidTeleport()
+		end
+	end
+	
+	script.Parent.MouseButton1Click:Connect(onButtonClicked)
+	
+end
+coroutine.wrap(CRJET_fake_script)()
+local function OUSYX_fake_script() -- Suicide.Suicide 
+	local script = Instance.new('LocalScript', Suicide)
+
+	local Players = game:GetService("Players")
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = Players.LocalPlayer
+		local character = player.Character
+		local humanoidRootPart = character and character:FindFirstChild("HumanoidRootPart")
+	
+		if character and humanoidRootPart then
+			-- Create explosion at character's position
+			local explosion1 = Instance.new("Explosion")
+			explosion1.Parent = game.Workspace
+			explosion1.Position = character.HumanoidRootPart.Position
+	
+			-- Create explosion at humanoid root part's position
+			local explosion2 = Instance.new("Explosion")
+			explosion2.Parent = game.Workspace
+			explosion2.Position = humanoidRootPart.Position
+		else
+			warn("Character or HumanoidRootPart not found.")
+		end
+	end)
+	
+end
+coroutine.wrap(OUSYX_fake_script)()
+local function TOYBD_fake_script() -- RapidSuicide.SuicidRapode 
+	local script = Instance.new('LocalScript', RapidSuicide)
+
+	local Players = game:GetService("Players")
+	
+	local function createExplosions()
+		local player = Players.LocalPlayer
+		local character = player.Character
+		local humanoidRootPart = character and character:FindFirstChild("HumanoidRootPart")
+	
+		if character and humanoidRootPart then
+			-- Create explosion at character's position
+			local explosion1 = Instance.new("Explosion")
+			explosion1.Parent = game.Workspace
+			explosion1.Position = character.HumanoidRootPart.Position
+	
+			-- Create explosion at humanoid root part's position
+			local explosion2 = Instance.new("Explosion")
+			explosion2.Parent = game.Workspace
+			explosion2.Position = humanoidRootPart.Position
+	
+			-- Delay between explosions (adjust as needed)
+			local explosionDelay = 0.5
+			wait(explosionDelay)
+	
+			-- Call the function again for continuous explosions
+			createExplosions()
+		end
+	end
+	
+	-- Function to check for player's character existence
+	local function checkCharacter()
+		local player = Players.LocalPlayer
+		while wait(1) do
+			if not player.Character then
+				break
+			end
+		end
+		-- Stop explosions when player respawns or character no longer exists
+		print("Player respawned or character no longer exists.")
+	end
+	
+	-- Start checking for character existence and create explosions
+	script.Parent.MouseButton1Click:Connect(function()
+		spawn(checkCharacter) -- Run in separate thread to avoid blocking UI
+		createExplosions()
+	end)
+	
+end
+coroutine.wrap(TOYBD_fake_script)()
+local function YEBHR_fake_script() -- Firework.FIRE 
+	local script = Instance.new('LocalScript', Firework)
+
+	local Players = game:GetService("Players")
+	
+	local isCreatingExplosion = false -- Flag to track if an explosion is currently being created
+	
+	-- Function to create a fireworks-like explosion
+	local function createFireworkExplosion()
+		local player = Players.LocalPlayer
+		local character = player.Character
+		local humanoidRootPart = character and character:FindFirstChild("HumanoidRootPart")
+	
+		if character and humanoidRootPart and not isCreatingExplosion then
+			isCreatingExplosion = true -- Set flag to true to prevent multiple explosions
+	
+			-- Calculate random offset for fireworks effect
+			local offset = Vector3.new(math.random(-20, 20), 50, math.random(-20, 20)) -- Adjust range as needed
+	
+			-- Create explosion at offset from character's position
+			local explosion = Instance.new("Explosion")
+			explosion.Parent = game.Workspace
+			explosion.Position = character.HumanoidRootPart.Position + offset
+			explosion.BlastRadius = 8 -- Adjust blast radius for fireworks effect
+			explosion.BlastPressure = 100000 -- Adjust blast pressure for fireworks effect
+			explosion.DestroyJointRadiusPercent = 0 -- Ensure it doesn't affect joints
+			explosion.ExplosionType = Enum.ExplosionType.NoCraters -- No craters for fireworks effect
+	
+			-- Sound effect (optional)
+			local sound = Instance.new("Sound")
+			sound.Parent = explosion
+			sound.SoundId = "rbxassetid://1905367471" -- Insert sound ID for fireworks sound effect
+			sound.Volume = 0.1
+			sound:Play()
+	
+			-- Delay between explosions (adjust as needed)
+			local explosionDelay = 0.1 -- Increase delay to prevent rapid fire
+			wait(explosionDelay)
+	
+			isCreatingExplosion = false -- Reset flag to allow creating another explosion
+		end
+	end
+	
+	-- Function to check for player's character existence
+	local function checkCharacter()
+		local player = Players.LocalPlayer
+		while wait(1) do
+			if not player.Character then
+				break
+			end
+		end
+		-- Stop fireworks when player respawns or character no longer exists
+		print("Player respawned or character no longer exists.")
+	end
+	
+	-- Start checking for character existence and create fireworks
+	script.Parent.MouseButton1Click:Connect(function()
+		spawn(checkCharacter) -- Run in separate thread to avoid blocking UI
+		createFireworkExplosion()
+	end)
+	
+end
+coroutine.wrap(YEBHR_fake_script)()
+local function EBUUBML_fake_script() -- Rapidfireworkk.rapid firedokrr 
+	local script = Instance.new('LocalScript', Rapidfireworkk)
+
+	local Players = game:GetService("Players")
+	
+	local isCreatingExplosion = false -- Flag to track if an explosion is currently being created
+	local fireworksRunning = false -- Flag to track if fireworks are currently running
+	
+	-- Function to create a fireworks-like explosion
+	local function createFireworkExplosion()
+		local player = Players.LocalPlayer
+		local character = player.Character
+		local humanoidRootPart = character and character:FindFirstChild("HumanoidRootPart")
+	
+		if character and humanoidRootPart then
+			isCreatingExplosion = true -- Set flag to true to prevent multiple explosions
+	
+			-- Calculate random offset for fireworks effect
+			local offset = Vector3.new(math.random(-20, 20), 50, math.random(-20, 20)) -- Adjust range as needed
+	
+			-- Create explosion at offset from character's position
+			local explosion = Instance.new("Explosion")
+			explosion.Parent = game.Workspace
+			explosion.Position = character.HumanoidRootPart.Position + offset
+			explosion.BlastRadius = 8 -- Adjust blast radius for fireworks effect
+			explosion.BlastPressure = 100000 -- Adjust blast pressure for fireworks effect
+			explosion.DestroyJointRadiusPercent = 0 -- Ensure it doesn't affect joints
+			explosion.ExplosionType = Enum.ExplosionType.NoCraters -- No craters for fireworks effect
+	
+			-- Sound effect (optional)
+			local sound = Instance.new("Sound")
+			sound.Parent = explosion
+			sound.SoundId = "rbxassetid://1905367471" -- Insert sound ID for fireworks sound effect
+			sound.Volume = 0.1
+			sound:Play()
+	
+			-- Delay between explosions (adjust as needed)
+			local explosionDelay = 0.4 -- Adjust delay between fireworks
+			wait(explosionDelay)
+	
+			isCreatingExplosion = false -- Reset flag to allow creating another explosion
+			if fireworksRunning then
+				createFireworkExplosion() -- Continue creating explosions if fireworks are still running
+			end
+		end
+	end
+	
+	-- Function to check for player's character existence
+	local function checkCharacter()
+		local player = Players.LocalPlayer
+		while wait(1) do
+			if not player.Character then
+				break
+			end
+		end
+		-- Stop fireworks when player respawns or character no longer exists
+		print("Player respawned or character no longer exists.")
+	end
+	
+	-- Start/Stop fireworks when button is clicked
+	script.Parent.MouseButton1Click:Connect(function()
+		if not fireworksRunning then
+			-- Start fireworks
+			fireworksRunning = true
+			spawn(checkCharacter) -- Run in separate thread to avoid blocking UI
+			createFireworkExplosion()
+		else
+			-- Stop fireworks
+			fireworksRunning = false
+		end
+	end)
+	
+end
+coroutine.wrap(EBUUBML_fake_script)()
+local function TWYBXS_fake_script() -- REALLYRAPIDD.reallyraapidfirework 
+	local script = Instance.new('LocalScript', REALLYRAPIDD)
+
+	local Players = game:GetService("Players")
+	
+	local isCreatingExplosion = false -- Flag to track if an explosion is currently being created
+	local fireworksRunning = false -- Flag to track if fireworks are currently running
+	
+	-- Function to create a fireworks-like explosion
+	local function createFireworkExplosion()
+		local player = Players.LocalPlayer
+		local character = player.Character
+		local humanoidRootPart = character and character:FindFirstChild("HumanoidRootPart")
+	
+		if character and humanoidRootPart then
+			isCreatingExplosion = true -- Set flag to true to prevent multiple explosions
+	
+			-- Calculate random offset for fireworks effect
+			local offset = Vector3.new(math.random(-20, 20), 50, math.random(-20, 20)) -- Adjust range as needed
+	
+			-- Create explosion at offset from character's position
+			local explosion = Instance.new("Explosion")
+			explosion.Parent = game.Workspace
+			explosion.Position = character.HumanoidRootPart.Position + offset
+			explosion.BlastRadius = 8 -- Adjust blast radius for fireworks effect
+			explosion.BlastPressure = 100000 -- Adjust blast pressure for fireworks effect
+			explosion.DestroyJointRadiusPercent = 0 -- Ensure it doesn't affect joints
+			explosion.ExplosionType = Enum.ExplosionType.NoCraters -- No craters for fireworks effect
+	
+			-- Sound effect (optional)
+			local sound = Instance.new("Sound")
+			sound.Parent = explosion
+			sound.SoundId = "rbxassetid://1905367471" -- Insert sound ID for fireworks sound effect
+			sound.Volume = 0.1
+			sound:Play()
+	
+			-- Delay between explosions (adjust as needed)
+			local explosionDelay = 0.1 -- Adjust delay between fireworks
+			wait(explosionDelay)
+	
+			isCreatingExplosion = false -- Reset flag to allow creating another explosion
+			if fireworksRunning then
+				createFireworkExplosion() -- Continue creating explosions if fireworks are still running
+			end
+		end
+	end
+	
+	-- Function to check for player's character existence
+	local function checkCharacter()
+		local player = Players.LocalPlayer
+		while wait(1) do
+			if not player.Character then
+				break
+			end
+		end
+		-- Stop fireworks when player respawns or character no longer exists
+		print("Player respawned or character no longer exists.")
+	end
+	
+	-- Start/Stop fireworks when button is clicked
+	script.Parent.MouseButton1Click:Connect(function()
+		if not fireworksRunning then
+			-- Start fireworks
+			fireworksRunning = true
+			spawn(checkCharacter) -- Run in separate thread to avoid blocking UI
+			createFireworkExplosion()
+		else
+			-- Stop fireworks
+			fireworksRunning = false
+		end
+	end)
+	
+end
+coroutine.wrap(TWYBXS_fake_script)()
+local function RUKP_fake_script() -- TextButton.Script 
 	local script = Instance.new('Script', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(ODZF_fake_script)()
-local function IYQZWJ_fake_script() -- TextButton_2.Script 
+coroutine.wrap(RUKP_fake_script)()
+local function JHCQLF_fake_script() -- TextButton_2.Script 
 	local script = Instance.new('Script', TextButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -713,8 +1136,8 @@ local function IYQZWJ_fake_script() -- TextButton_2.Script
 		script.Parent.Parent.Parent.TextButton.Visible = true
 	end)
 end
-coroutine.wrap(IYQZWJ_fake_script)()
-local function VQUB_fake_script() -- TextButton_3.Script 
+coroutine.wrap(JHCQLF_fake_script)()
+local function QYQC_fake_script() -- TextButton_3.Script 
 	local script = Instance.new('Script', TextButton_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -722,4 +1145,4 @@ local function VQUB_fake_script() -- TextButton_3.Script
 		script.Parent.Visible = false
 	end)
 end
-coroutine.wrap(VQUB_fake_script)()
+coroutine.wrap(QYQC_fake_script)()
