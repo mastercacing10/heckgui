@@ -1,6 +1,6 @@
---MADE BY MASTERCACING10 DONT REPOST
+--MADE BY MASTERCACING10 DO NOT COPY!
 
-local ScreenGui = Instance.new("ScreenGui")
+local Hack = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
 local UICorner = Instance.new("UICorner")
@@ -20,6 +20,7 @@ local RapidSuicide = Instance.new("TextButton")
 local Firework = Instance.new("TextButton")
 local Rapidfireworkk = Instance.new("TextButton")
 local REALLYRAPIDD = Instance.new("TextButton")
+local Sus = Instance.new("TextButton")
 local TextButton = Instance.new("TextButton")
 local TextButton_2 = Instance.new("TextButton")
 local PC = Instance.new("TextLabel")
@@ -27,11 +28,12 @@ local TextButton_3 = Instance.new("TextButton")
 
 --Properties:
 
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Hack.Name = "Hack"
+Hack.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Hack.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Main.Name = "Main"
-Main.Parent = ScreenGui
+Main.Parent = Hack
 Main.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
 Main.Position = UDim2.new(0.242961422, 0, 0.207815692, 0)
 Main.Size = UDim2.new(0, 530, 0, 265)
@@ -63,7 +65,7 @@ Fly.Parent = ScrollingFrame
 Fly.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Fly.Size = UDim2.new(0, 200, 0, 50)
 Fly.Font = Enum.Font.SourceSans
-Fly.Text = "Fly"
+Fly.Text = "Fly *pc only*"
 Fly.TextColor3 = Color3.fromRGB(0, 0, 0)
 Fly.TextScaled = true
 Fly.TextSize = 14.000
@@ -228,7 +230,7 @@ Rapidfireworkk.TextWrapped = true
 REALLYRAPIDD.Name = "REALLY RAPIDD"
 REALLYRAPIDD.Parent = ScrollingFrame
 REALLYRAPIDD.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-REALLYRAPIDD.Position = UDim2.new(0, 0, 0.717752695, 0)
+REALLYRAPIDD.Position = UDim2.new(0, 0, 0.694925308, 0)
 REALLYRAPIDD.Size = UDim2.new(0, 200, 0, 50)
 REALLYRAPIDD.Font = Enum.Font.SourceSans
 REALLYRAPIDD.Text = "Really Rapid Firework"
@@ -236,6 +238,18 @@ REALLYRAPIDD.TextColor3 = Color3.fromRGB(0, 0, 0)
 REALLYRAPIDD.TextScaled = true
 REALLYRAPIDD.TextSize = 14.000
 REALLYRAPIDD.TextWrapped = true
+
+Sus.Name = "Sus"
+Sus.Parent = ScrollingFrame
+Sus.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Sus.Position = UDim2.new(0.377358496, 0, 0.694467068, 0)
+Sus.Size = UDim2.new(0, 200, 0, 50)
+Sus.Font = Enum.Font.SourceSans
+Sus.Text = "Sus"
+Sus.TextColor3 = Color3.fromRGB(0, 0, 0)
+Sus.TextScaled = true
+Sus.TextSize = 14.000
+Sus.TextWrapped = true
 
 TextButton.Parent = Main
 TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -270,7 +284,7 @@ PC.Text = "THIS SCRIPT IS PC ONLY"
 PC.TextColor3 = Color3.fromRGB(0, 0, 0)
 PC.TextSize = 20.000
 
-TextButton_3.Parent = ScreenGui
+TextButton_3.Parent = Hack
 TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_3.Position = UDim2.new(0, 0, 0.382402718, 0)
 TextButton_3.Size = UDim2.new(0, 139, 0, 50)
@@ -283,7 +297,7 @@ TextButton_3.TextWrapped = true
 
 -- Scripts:
 
-local function THOG_fake_script() -- Fly.Fly 
+local function IUACM_fake_script() -- Fly.Fly 
 	local script = Instance.new('LocalScript', Fly)
 
 	local button = script.Parent
@@ -369,10 +383,9 @@ local function THOG_fake_script() -- Fly.Fly
 			enableFly()
 		end
 	end)
-	
 end
-coroutine.wrap(THOG_fake_script)()
-local function LBIYSH_fake_script() -- infjump.infjump 
+coroutine.wrap(IUACM_fake_script)()
+local function TAWYWS_fake_script() -- infjump.infjump 
 	local script = Instance.new('LocalScript', infjump)
 
 	local button = script.Parent
@@ -414,8 +427,8 @@ local function LBIYSH_fake_script() -- infjump.infjump
 	end)
 	
 end
-coroutine.wrap(LBIYSH_fake_script)()
-local function KCAOR_fake_script() -- KickUrSelf.Kick 
+coroutine.wrap(TAWYWS_fake_script)()
+local function MOEP_fake_script() -- KickUrSelf.Kick 
 	local script = Instance.new('LocalScript', KickUrSelf)
 
 	local button = script.Parent
@@ -428,8 +441,8 @@ local function KCAOR_fake_script() -- KickUrSelf.Kick
 	button.MouseButton1Click:Connect(kickPlayer)
 	
 end
-coroutine.wrap(KCAOR_fake_script)()
-local function NRVJ_fake_script() -- Teleport.Telepur 
+coroutine.wrap(MOEP_fake_script)()
+local function LGUJIEY_fake_script() -- Teleport.Telepur 
 	local script = Instance.new('LocalScript', Teleport)
 
 	local button = script.Parent
@@ -457,8 +470,8 @@ local function NRVJ_fake_script() -- Teleport.Telepur
 	button.MouseButton1Click:Connect(teleportToRandomPlayer)
 	
 end
-coroutine.wrap(NRVJ_fake_script)()
-local function CAOPT_fake_script() -- Esp.Esp 
+coroutine.wrap(LGUJIEY_fake_script)()
+local function BKGMU_fake_script() -- Esp.Esp 
 	local script = Instance.new('LocalScript', Esp)
 
 	local button = script.Parent
@@ -573,8 +586,8 @@ local function CAOPT_fake_script() -- Esp.Esp
 	end)
 	
 end
-coroutine.wrap(CAOPT_fake_script)()
-local function DXEFNW_fake_script() -- Invisiblr.INV 
+coroutine.wrap(BKGMU_fake_script)()
+local function IMER_fake_script() -- Invisiblr.INV 
 	local script = Instance.new('LocalScript', Invisiblr)
 
 	local button = script.Parent
@@ -586,7 +599,7 @@ local function DXEFNW_fake_script() -- Invisiblr.INV
 		invisible = true
 	
 		-- Hide player's character
-		character.HumanoidRootPart.Transparency = 1
+		--character.HumanoidRootPart.Transparency = 1
 		character.HumanoidRootPart.CanCollide = false
 		for _, part in ipairs(character:GetChildren()) do
 			if part:IsA("BasePart") then
@@ -636,7 +649,7 @@ local function DXEFNW_fake_script() -- Invisiblr.INV
 		invisible = false
 	
 		-- Show player's character
-		character.HumanoidRootPart.Transparency = 0
+		--character.HumanoidRootPart.Transparency = 1
 		character.HumanoidRootPart.CanCollide = true
 		for _, part in ipairs(character:GetChildren()) do
 			if part:IsA("BasePart") then
@@ -658,8 +671,10 @@ local function DXEFNW_fake_script() -- Invisiblr.INV
 	local function toggleVisibility()
 		if invisible then
 			makeVisible()
+			character:WaitForChild("HumanoidRootPart").Transparency = 1
 		else
 			makeInvisible()
+			character:WaitForChild("HumanoidRootPart").Transparency = 1
 		end
 	end
 	
@@ -674,8 +689,8 @@ local function DXEFNW_fake_script() -- Invisiblr.INV
 	end)
 	
 end
-coroutine.wrap(DXEFNW_fake_script)()
-local function XUAPMVH_fake_script() -- Noclip.noclip 
+coroutine.wrap(IMER_fake_script)()
+local function SEXPR_fake_script() -- Noclip.noclip 
 	local script = Instance.new('LocalScript', Noclip)
 
 	local player = game.Players.LocalPlayer
@@ -710,8 +725,8 @@ local function XUAPMVH_fake_script() -- Noclip.noclip
 	script.Parent.MouseButton1Click:Connect(onButtonClicked)
 	
 end
-coroutine.wrap(XUAPMVH_fake_script)()
-local function YUIB_fake_script() -- Fling.Fling 
+coroutine.wrap(SEXPR_fake_script)()
+local function ZDGF_fake_script() -- Fling.Fling 
 	local script = Instance.new('LocalScript', Fling)
 
 	local player = game.Players.LocalPlayer
@@ -734,8 +749,8 @@ local function YUIB_fake_script() -- Fling.Fling
 	script.Parent.MouseButton1Click:Connect(onButtonClicked)
 	
 end
-coroutine.wrap(YUIB_fake_script)()
-local function RFXURS_fake_script() -- Spin.Spinn 
+coroutine.wrap(ZDGF_fake_script)()
+local function HVGUBW_fake_script() -- Spin.Spinn 
 	local script = Instance.new('LocalScript', Spin)
 
 	local player = game.Players.LocalPlayer
@@ -775,8 +790,8 @@ local function RFXURS_fake_script() -- Spin.Spinn
 	script.Parent.MouseButton1Down:Connect(onButtonClicked)
 	
 end
-coroutine.wrap(RFXURS_fake_script)()
-local function CRJET_fake_script() -- RapidTele.Rapid 
+coroutine.wrap(HVGUBW_fake_script)()
+local function VXFKZWW_fake_script() -- RapidTele.Rapid 
 	local script = Instance.new('LocalScript', RapidTele)
 
 	local player = game.Players.LocalPlayer
@@ -831,8 +846,8 @@ local function CRJET_fake_script() -- RapidTele.Rapid
 	script.Parent.MouseButton1Click:Connect(onButtonClicked)
 	
 end
-coroutine.wrap(CRJET_fake_script)()
-local function OUSYX_fake_script() -- Suicide.Suicide 
+coroutine.wrap(VXFKZWW_fake_script)()
+local function DSALB_fake_script() -- Suicide.Suicide 
 	local script = Instance.new('LocalScript', Suicide)
 
 	local Players = game:GetService("Players")
@@ -858,8 +873,8 @@ local function OUSYX_fake_script() -- Suicide.Suicide
 	end)
 	
 end
-coroutine.wrap(OUSYX_fake_script)()
-local function TOYBD_fake_script() -- RapidSuicide.SuicidRapode 
+coroutine.wrap(DSALB_fake_script)()
+local function AWRC_fake_script() -- RapidSuicide.SuicidRapode 
 	local script = Instance.new('LocalScript', RapidSuicide)
 
 	local Players = game:GetService("Players")
@@ -906,10 +921,10 @@ local function TOYBD_fake_script() -- RapidSuicide.SuicidRapode
 		spawn(checkCharacter) -- Run in separate thread to avoid blocking UI
 		createExplosions()
 	end)
-	
+		
 end
-coroutine.wrap(TOYBD_fake_script)()
-local function YEBHR_fake_script() -- Firework.FIRE 
+coroutine.wrap(AWRC_fake_script)()
+local function BSBD_fake_script() -- Firework.FIRE 
 	local script = Instance.new('LocalScript', Firework)
 
 	local Players = game:GetService("Players")
@@ -971,8 +986,8 @@ local function YEBHR_fake_script() -- Firework.FIRE
 	end)
 	
 end
-coroutine.wrap(YEBHR_fake_script)()
-local function EBUUBML_fake_script() -- Rapidfireworkk.rapid firedokrr 
+coroutine.wrap(BSBD_fake_script)()
+local function STSN_fake_script() -- Rapidfireworkk.rapid firedokrr 
 	local script = Instance.new('LocalScript', Rapidfireworkk)
 
 	local Players = game:GetService("Players")
@@ -1045,8 +1060,8 @@ local function EBUUBML_fake_script() -- Rapidfireworkk.rapid firedokrr
 	end)
 	
 end
-coroutine.wrap(EBUUBML_fake_script)()
-local function TWYBXS_fake_script() -- REALLYRAPIDD.reallyraapidfirework 
+coroutine.wrap(STSN_fake_script)()
+local function YZJSW_fake_script() -- REALLYRAPIDD.reallyraapidfirework 
 	local script = Instance.new('LocalScript', REALLYRAPIDD)
 
 	local Players = game:GetService("Players")
@@ -1119,16 +1134,84 @@ local function TWYBXS_fake_script() -- REALLYRAPIDD.reallyraapidfirework
 	end)
 	
 end
-coroutine.wrap(TWYBXS_fake_script)()
-local function RUKP_fake_script() -- TextButton.Script 
+coroutine.wrap(YZJSW_fake_script)()
+local function NWGP_fake_script() -- Sus.Sus 
+	local script = Instance.new('LocalScript', Sus)
+
+	local player = game.Players.LocalPlayer
+	local button = script.Parent
+	local r6AnimationId = "rbxassetid://18212756701"  -- Replace with your R6 animation ID
+	local r15AnimationId = "rbxassetid://18212732065"  -- Replace with your R15 animation ID
+	local soundId = "rbxassetid://2074873686"  -- Your provided sound ID
+	local animationTrack = nil
+	local isPlaying = false
+	local soundInstance = nil
+	local runService = game:GetService("RunService")
+	
+	local function toggleAnimation()
+		local character = player.Character
+		local RootPart = character:WaitForChild("HumanoidRootPart")
+		if character then
+			local humanoid = character:FindFirstChildOfClass("Humanoid")
+			if humanoid then
+				-- Determine the character type (R6 or R15) and set the appropriate animation ID
+				local animationId
+				if humanoid.RigType == Enum.HumanoidRigType.R6 then
+					animationId = r6AnimationId
+				else
+					animationId = r15AnimationId
+				end
+	
+				if not animationTrack then
+					local animation = Instance.new("Animation")
+					animation.AnimationId = animationId
+					animationTrack = humanoid:LoadAnimation(animation)
+					animationTrack.Looped = true
+				end
+	
+				if not soundInstance then
+					soundInstance = Instance.new("Sound", character)
+					soundInstance.SoundId = soundId
+					soundInstance.Looped = true
+				end
+	
+				if isPlaying then
+					animationTrack:Stop()
+					soundInstance:Stop()
+					isPlaying = false
+					RootPart.Anchored = true  -- Ensure RootPart is anchored when animation stops
+				else
+					animationTrack:Play()
+					soundInstance:Play()
+					isPlaying = true
+	
+					-- Continuously anchor the HumanoidRootPart to prevent it from becoming unanchored
+					local heartbeatConnection
+					heartbeatConnection = runService.Heartbeat:Connect(function()
+						RootPart.Anchored = true
+						if not isPlaying then
+							RootPart.Anchored = false  -- Ensure RootPart is anchored after animation stops
+							heartbeatConnection:Disconnect()  -- Disconnect once animation stops
+						end
+					end)
+				end
+			end
+		end
+	end
+	
+	button.MouseButton1Click:Connect(toggleAnimation)
+	
+end
+coroutine.wrap(NWGP_fake_script)()
+local function WVUUYE_fake_script() -- TextButton.Script 
 	local script = Instance.new('Script', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(RUKP_fake_script)()
-local function JHCQLF_fake_script() -- TextButton_2.Script 
+coroutine.wrap(WVUUYE_fake_script)()
+local function HCXCBJ_fake_script() -- TextButton_2.Script 
 	local script = Instance.new('Script', TextButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1136,8 +1219,8 @@ local function JHCQLF_fake_script() -- TextButton_2.Script
 		script.Parent.Parent.Parent.TextButton.Visible = true
 	end)
 end
-coroutine.wrap(JHCQLF_fake_script)()
-local function QYQC_fake_script() -- TextButton_3.Script 
+coroutine.wrap(HCXCBJ_fake_script)()
+local function YWWSRAC_fake_script() -- TextButton_3.Script 
 	local script = Instance.new('Script', TextButton_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1145,4 +1228,110 @@ local function QYQC_fake_script() -- TextButton_3.Script
 		script.Parent.Visible = false
 	end)
 end
-coroutine.wrap(QYQC_fake_script)()
+coroutine.wrap(YWWSRAC_fake_script)()
+local function QUOYZB_fake_script() -- Hack.Script 
+	local script = Instance.new('Script', Hack)
+
+	--[[ Made by coolcapidog
+	Channel ->> https://www.youtube.com/c/coolcapidog
+	]]
+	--script.Parent.Transparency = 1
+	--script.Parent.CanCollide = false
+	
+	local TweenService = game:GetService("TweenService")
+	
+	-- Function to create notification GUI for a player
+	local function createNotificationGui(player)
+		local playerGui = player:WaitForChild("PlayerGui")
+		local notificationGui = Instance.new("ScreenGui")
+		notificationGui.Name = "NotificationGui"
+		notificationGui.Parent = playerGui
+	
+		local notificationFrame = Instance.new("Frame")
+		notificationFrame.Size = UDim2.new(0.2, 0, 0.1, 0)
+		notificationFrame.Position = UDim2.new(0.8, 0, 0.1, 0)
+		notificationFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255) -- Adjust as needed
+		notificationFrame.BorderSizePixel = 0
+		notificationFrame.Parent = notificationGui
+	
+		local iconImage = Instance.new("ImageLabel")
+		iconImage.Size = UDim2.new(0.3, 0, 1, 0)
+		iconImage.Position = UDim2.new(0, 0, 0, 0)
+		iconImage.Image = "rbxassetid://16831157661" -- Replace with your icon ID
+		iconImage.Parent = notificationFrame
+	
+		local textLabel = Instance.new("TextLabel")
+		textLabel.Size = UDim2.new(0.7, 0, 1, 0)
+		textLabel.Position = UDim2.new(0.3, 0, 0, 0)
+		textLabel.Text = ""
+		textLabel.Font = Enum.Font.SourceSansBold
+		textLabel.TextColor3 = Color3.fromRGB(0, 0, 0) -- Adjust text color as needed
+		textLabel.TextSize = 20
+		textLabel.TextWrapped = true
+		textLabel.Parent = notificationFrame
+	
+		local notificationSound = Instance.new("Sound")
+		notificationSound.SoundId = "rbxassetid://2865227271" -- Replace with your sound ID
+		notificationSound.Volume = 0.5
+		notificationSound.Parent = notificationFrame
+	
+		return notificationGui, notificationFrame, textLabel, notificationSound
+	end
+	
+	-- Function to display notification and animate removal
+	local function showNotification(player, title, text)
+		local notificationGui, notificationFrame, textLabel, notificationSound = createNotificationGui(player)
+		textLabel.Text = title .. "\n" .. text
+		notificationSound:Play()
+	
+		-- Calculate end position for slide out animation
+		local endPosition = UDim2.new(1.2, 0, 0.1, 0) -- Slide out to the right
+	
+		-- TweenInfo for the animation
+		local tweenInfo = TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out, 0, false, 10) -- Duration of 1 second, delay of 10 seconds
+	
+		-- Create the Tween
+		local tween = TweenService:Create(notificationFrame, tweenInfo, { Position = endPosition })
+	
+		-- Play the Tween
+		tween:Play()
+	
+		-- Destroy the notification after animation completes
+		tween.Completed:Connect(function()
+			notificationGui:Destroy()
+		end)
+	end
+	
+	-- Show notification when a player joins
+	game.Players.PlayerAdded:Connect(function(player)
+		showNotification(player, script.Title.Value, script.Text.Value)
+	end)
+	
+	-- Optionally, show notification for players already in the game
+	for _, player in ipairs(game.Players:GetPlayers()) do
+		showNotification(player, script.Title.Value, script.Text.Value)
+	end
+	
+end
+coroutine.wrap(QUOYZB_fake_script)()
+local function MVKOQEY_fake_script() -- Hack.NotificationSystem 
+	local script = Instance.new('LocalScript', Hack)
+
+	--[[ Made by coolcapidog
+	Channel ->> https://www.youtube.com/c/coolcapidog
+	Don't change anything except you know how to script.
+	]]
+	local LastText = nil
+	
+	script.RemoteEvent.OnClientEvent:Connect(function(title, text)
+		if LastText == text then return end
+		LastText = text
+		game.StarterGui:SetCore("SendNotification", {
+			Title = title;
+			Text = text;
+			Duration = "10";})
+		wait(1)
+		LastText = nil
+	end)
+end
+coroutine.wrap(MVKOQEY_fake_script)()
