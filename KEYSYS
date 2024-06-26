@@ -1,62 +1,52 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Player = game.Player.LocalPlayer
-local Window = OrionLib:MakeWindow({Name = "Key System", HidePremium = false, SaveConfig = true, IntroEnabled = true, IntroText = "DarkVibesMan Hub Key"})
+local Player = game.Players.Localplayer
+local Window = OrionLib:MakeWindow({Name = "Title of the library", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
+
+local Tab = Window:MakeTab({
+    Name = "Tab 1",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+    
 OrionLib:MakeNotification({
-	Name = "Logged in!",
-	Content = "You Are Logged in As "..Player.Name..".",
-	Image = "rbxassetid://4483345998",
-	Time = 5
+    Name = "Hey!",
+    Content = "Logged in as"..Player.Name..",
+    Image = "rbxassetid://4483345998",
+    Time = 5
 })
 
 _G.Key = "DarkVibesMan"
 _G.KeyInput = "string"
 
-function HubLoaded()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/mastercacing10/heckgui/main/HackV1", true))()
+function MakeScriptHub()
+OrionLib:MakeWindow({Name = "Title of the library", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 end
 
-function correctkeynotif()
-	OrionLib:MakeNotification({
-		Name = "Correct Key!",
-		Content = "You have entered the correct key!",
-		Image = "rbxassetid://4483345998",
-		Time = 5
-	})
-end
-
-function INCORRECTKEY()
-	OrionLib:MakeNotification({
-		Name = "Incorrect Key!",
-		Content = "You have entered the Incorrect key!",
-		Image = "rbxassetid://4483345998",
-		Time = 5
-	})
-end
-
-local Tab = Window:MakeTab({
-	Name = "Tab 1",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+function CorrectKeyNotification()
+OrionLib:MakeNotification({
+    Name = "Hey!",
+    Content = "Key Entered Successfully",
+    Image = "rbxassetid://11886780451",
+    Time = 5
 })
+end
 
 Tab:AddTextbox({
-	Name = "Enter Key",
-	Default = "Input",
-	TextDisappear = true,
-	Callback = function(Value)
-		_G.KeyInput = Value
-	end	  
+    Name = "Enter Key",
+    Default = "Enter Key Here",
+    TextDisappear = false,
+    Callback = function(Value)
+        _G.KeyInput = Value
+    end      
 })
 
 Tab:AddButton({
-	Name = "Check Key",
-	Callback = function()
-		if _G.KeyInput == _G.Key then
-			HubLoaded()
-			correctkeynotif()
-		else
-			INCORRECTKEY()
-		end
-	end    
+    Name = "Check key!",
+    Callback = function()
+              If _G.KeyInput == _G.Key then
+MakeScriptHub()
+end
+      end    
 })
+OrionLib:Init()
